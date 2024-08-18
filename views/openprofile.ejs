@@ -100,7 +100,8 @@
                             <% } %>
                                 <!-- Friends Section -->
                                 <div class="w-full max-h-80 overflow-auto bg-white shadow-md rounded">
-                                    <span class="capitalize block px-4 py-1">Friends (<%= friends.length %>)</span>
+                                    <span class="capitalize block px-4 py-1">Friends (<%= friends.length %>)
+                                            <%=mutualFriends.length%> mutual friends</span>
                                     <hr class="h-2 mt-[2px]">
                                     <div class="w-full flex flex-wrap gap-2 p-2">
                                         <% if (friends.length> 0) { %>
