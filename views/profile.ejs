@@ -109,7 +109,8 @@
                     <div class="w-full max-h-80 overflow-auto bg-white shadow-md rounded">
                         <div class="relative items-center flex justify-between">
                             <span
-                                class="capitalize bg-cyan-500 shadow-md p-1 pl-2 rounded text-white w-full font-serif">friends</span>
+                                class="capitalize bg-cyan-500 shadow-md p-1 pl-2 rounded text-white w-full font-serif">friends
+                                (<%=friends.length%>)</span>
                             <input type="text" id="searchInput" placeholder="Search . . . ."
                                 class="right-10 hidden rounded font-serif showinput absolute text-[12px] p-1 pl-2 placeholder:capitalize ml-4 text-black outline-none border-[1px] border-b-gray">
                             <span
@@ -119,7 +120,6 @@
                                     onclick="hideInputBox()"></i>
                             </span>
                         </div>
-
                         <div class="w-[363px] h-[126px] overflow-y-scroll scroll flex flex-wrap gap-2 p-2 mt-2 rounded">
                             <!-- Friends list -->
                             <% if(friends.length> 0) { %>
